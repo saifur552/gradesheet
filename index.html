@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grade Sheet</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      margin: 0;
+    }
+    .grade-sheet {
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h1 {
+      text-align: center;
+    }
+    label, input {
+      display: block;
+      margin: 10px 0;
+      width: 100%;
+    }
+    .result {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    button {
+      padding: 10px;
+      width: 100%;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="grade-sheet">
+    <h1>Grade Sheet</h1>
+    <label for="subject1">Subject 1</label>
+    <input type="number" id="subject1" min="0" max="100" placeholder="Enter marks for Subject 1">
+
+    <label for="subject2">Subject 2</label>
+    <input type="number" id="subject2" min="0" max="100" placeholder="Enter marks for Subject 2">
+
+    <label for="subject3">Subject 3</label>
+    <input type="number" id="subject3" min="0" max="100" placeholder="Enter marks for Subject 3">
+
+    <label for="subject4">Subject 4</label>
+    <input type="number" id="subject4" min="0" max="100" placeholder="Enter marks for Subject 4">
+
+    <button onclick="calculateGrade()">Calculate Grade</button>
+
+    <div class="result" id="result"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
